@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu</title>
+    <script
+      src="https://kit.fontawesome.com/1547790c95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar-container">
+      <nav>
+        <div>
+          <h1 class="name">Himanshu</h1>
+        </div>
+        <div class="toggle" navbar-btn>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="navbar" navbar>
+          <ul>
+            <li>
+              <a href="#home" navbar-btn>Home</a>
+            </li>
+            <li>
+              <a href="#about" navbar-btn>AboutMe</a>
+            </li>
+            <li>
+              <a href="#resume" navbar-btn>Resume</a>
+            </li>
+            <li>
+              <a href="#testimonial" navbar-btn>Testimonial</a>
+            </li>
+            <li>
+              <a href="#contact" navbar-btn>ContactME</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="profile-container" id="home">
+      <div class="profile-parent">
+        <div class="profile-deatils">
+          <div class="colz-icon">
+            <a href="/" title="Title">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="/" title="Title">
+              <i class="fab fa-google-plus-square"></i>
+            </a>
+            <a href="/" title="Title">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="/" title="Title">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="/" title="Title">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </div>
+          <div class="profile-details-name">
+            Hello ,I'm <span class="highlighted-text">Himanshu</span>
+          </div>
+          <div class="profile-details-role">
+            <span class="primary-text">
+              <h1 class="typical" id="typical"></h1>
+              <p class="profile-role-tagline">
+                Knack of Building application with front and back end opration
+              </p>
+            </span>
+          </div>
+          <div class="profile-options">
+            <button class="btn hire-me">Hire Me</button>
+            <a href="resume.pdf" download="Himanshu resume.pdf">
+              <button class="btn get-resume">Get Resume</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="profile-picture">
+        <div class="profile-picture-background"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <img src="./wave.svg" alt="wave" />
+    </div>
+
+    <div class="container about-me" id="about">
+      <h1 class="title">AboutMe</h1>
+      <div>Why CHoose Me ?</div>
+      <div class="line"></div>
+      <div class="about-me-details">
+        <div class="about-me-picture">
+          <img src="./pic2.png" alt="My Photo" />
+        </div>
+        <div class="about-me-details-text">
+          <p>
+            Full stack web and mobile developer with background knowledge of
+            MERN stacks with redux, along with a knack of building applications
+            with utmost efficiency. Strong professional with a BSC willing to be
+            an asset for an organization.
+          </p>
+          <ul>
+            <li>
+              <h3>Here area a few Highlights :</h3>
+            </li>
+            <li>
+              <div class="red-dot"></div>
+              Full Stack web and mobile development
+            </li>
+            <li>
+              <div class="red-dot"></div>
+              Interactive Front End as per the design
+            </li>
+            <li>
+              <div class="red-dot"></div>
+              Redux for State Mnanagement
+            </li>
+            <li>
+              <div class="red-dot"></div>
+              Building REST API
+            </li>
+            <li>
+              <div class="red-dot"></div>
+              Managing database
+            </li>
+          </ul>
+          <div class="profile-options">
+            <button class="btn hire-me">Hire Me</button>
+            <a href="resume.pdf" download="Himanshu resume.pdf">
+              <button class="btn get-resume">Get Resume</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container resume" id="resume">
+      <h1 class="title">Resume</h1>
+      <div>My formal Bio Details</div>
+      <div class="line"></div>
+      <div class="resume-container">
+        <div class="resume-menu">
+          <div class="resume-menu-icon"></div>
+          <ul class="resume-menu-ul" id="menu">
+            <li
+              class="resume-menu-item selected"
+              id="education"
+              data-forSelect="education"
+            >
+              <i class="fas fa-user-graduate"></i>
+              <span> Education </span>
+            </li>
+            <li class="resume-menu-item" id="work" data-forSelect="work">
+              <i class="fas fa-history"></i>
+              <span> Work History </span>
+            </li>
+            <li class="resume-menu-item" id="skills" data-forSelect="skills">
+              <i class="fas fa-laptop-code"></i>
+              <span> Programing Skills </span>
+            </li>
+            <li
+              class="resume-menu-item"
+              data-forSelect="projects"
+              id="projects"
+            >
+              <i class="fas fa-chart-bar"></i>
+              <span> Projects </span>
+            </li>
+            <li class="resume-menu-item" data-forSelect="interests">
+              <i class="fas fa-palette"></i>
+              <span> Interests </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="resume-card-parent">
+          <div class="resume-card" resume-card>
+            <div class="education resume-item">
+              <ul>
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Bhoomi Uttarakhand University</h1>
+                      <p>BACHELOR OF COMPUTER APPLICATION</p>
+                    </div>
+                    <div class="resume-date">2020-2023</div>
+                  </div>
+                </li>
+
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>VIVEKANAND INTERMEDIATE COLLEGE</h1>
+                      <p>INTERMEDIATE PCM</p>
+                    </div>
+                    <div class="resume-date">2018-2020</div>
+                  </div>
+                </li>
+
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>VIVEKANAND INTERMEDIATE COLLEGE</h1>
+                      <p>HIGH SCHOOL</p>
+                    </div>
+                    <div class="resume-date">2016-2018</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="work-history resume-item">
+              <ul>
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Ehizeek Tachonology</h1>
+                      <h3>FULL STACK DEVELOPER INTERN</h3>
+                      <p>
+                        Currently working as MERN stack web and mobile developer
+                        and also an online instructor on udemy. <br />
+                        - Developed an ecommerce website for client with the
+                        dashboard for managing the products, managing reviews,
+                        users, payment etc. .
+                        <br />
+                        - Integrated the web app with backend services to create
+                        new user onboarding application with dynamic form
+                        content.
+                        <br />
+                        - I stretch my mental capacity to develope UI as per the
+                        given designs.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skills resume-item">
+              <ul class="skill-container">
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    Javascript
+                  </h1>
+                  <div class="skill-progress" id="js"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    ReactJS
+                  </h1>
+                  <div class="skill-progress" id="react"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    Express JS
+                  </h1>
+                  <div class="skill-progress" id="express"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    Node JS
+                  </h1>
+                  <div class="skill-progress" id="node"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    Mono DB
+                  </h1>
+                  <div class="skill-progress" id="mongo"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    C/C++
+                  </h1>
+                  <div class="skill-progress" id="cpp"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    HTML
+                  </h1>
+                  <div class="skill-progress" id="html"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    CSS
+                  </h1>
+                  <div class="skill-progress" id="css"></div>
+                </li>
+                <li class="skill-item">
+                  <h1>
+                    <div class="red-dot"></div>
+                    OTher
+                  </h1>
+                  <div class="skill-progress"></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="projects resume-item">
+              <ul>
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Personal Portfolio Web Site</h1>
+                      <p>
+                        <b>Tachnologies Used ReactJs , Bootstrap</b>
+                        <br />
+                        A Personal Portfolio website to show case all my deails
+                        and projects at onc place.
+                      </p>
+                    </div>
+                    <div class="resume-date">2020-2021</div>
+                  </div>
+                </li>
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Personal Portfolio Web Site</h1>
+                      <p>
+                        <b>Tachnologies Used ReactJs , Bootstrap</b>
+                        <br />
+                        A Personal Portfolio website to show case all my deails
+                        and projects at onc place.
+                      </p>
+                    </div>
+                    <div class="resume-date">2020-2021</div>
+                  </div>
+                </li>
+
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Personal Portfolio Web Site</h1>
+                      <p>
+                        <b>Tachnologies Used ReactJs , Bootstrap</b>
+                        <br />
+                        A Personal Portfolio website to show case all my deails
+                        and projects at onc place.
+                      </p>
+                    </div>
+                    <div class="resume-date">2020-2021</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="interests resume-item">
+              <ul>
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Teaching</h1>
+                      <p>
+                        Apart from being a tech enthusiast and a code writer, i
+                        also love to teach people what i know simply because i
+                        believe in sharing.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Music</h1>
+                      <p>
+                        Listening to soothing music is something i can never
+                        compromise with, skimming through Spotify's pop songs
+                        charts is at times the best stress reliever that i can
+                        get my hands on.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="resume-item-li">
+                  <div class="red-dot"></div>
+                  <div class="resume-text">
+                    <div>
+                      <h1>Competitive Gaming</h1>
+                      <p>
+                        I like to challenge my reflexes a lot while competing in
+                        football games, pushing the rank and having interactive
+                        gaming sessions excites me the most.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container testimonial" id="testimonial">
+      <div>
+        <h1 class="title">Testimonial</h1>
+        <p>What My cllient say about me</p>
+        <div class="line"></div>
+      </div>
+      <div class="testimonial-child">
+        <div class="card">
+          <div class="card-text">
+            I patronized Ehizeex and when He deliverd , I honestly fell in love
+            with project He is very honest ey and he delivers ontime.
+          </div>
+          <div class="card-star"></div>
+          <div class="card-profile">
+            <div class="card-img">
+              <img src="./pic2.png" title="Pic" />
+            </div>
+            <div class="card-profile-text">
+              <b>Himanshfa</b>
+              <span>CEO Miketech</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            I patronized Ehizeex and when He deliverd , I honestly fell in love
+            with project He is very honest ey and he delivers ontime.
+          </div>
+          <div class="card-star"></div>
+          <div class="card-profile">
+            <div class="card-img">
+              <img src="./pic2.png" title="Pic" />
+            </div>
+            <div class="card-profile-text">
+              <b>Himanshfa</b>
+              <span>CEO Miketech</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            I patronized Ehizeex and when He deliverd , I honestly fell in love
+            with project He is very honest ey and he delivers ontime.
+          </div>
+          <div class="card-star"></div>
+          <div class="card-profile">
+            <div class="card-img">
+              <img src="./pic2.png" title="Pic" />
+            </div>
+            <div class="card-profile-text">
+              <b>Himanshfa</b>
+              <span>CEO Miketech</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-text">
+            I patronized Ehizeex and when He deliverd , I honestly fell in love
+            with project He is very honest ey and he delivers ontime.
+          </div>
+          <div class="card-star"></div>
+          <div class="card-profile">
+            <div class="card-img">
+              <img src="./pic2.png" title="Pic" />
+            </div>
+            <div class="card-profile-text">
+              <b>Himanshfa</b>
+              <span>CEO Miketech</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="./wave.svg" alt="wave" />
+      </div>
+    </div> -->
+
+    <div class="container contact-me" id="contact">
+      <div>
+        <h1>Contact Me</h1>
+        <p>Lets keep In Toch</p>
+        <div class="line"></div>
+      </div>
+      <div class="contact-me-child">
+        <div class="colz-icon">
+          <h1>Get In Touch 📧</h1>
+          <a href="/" title="Title">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="/" title="Title">
+            <i class="fab fa-google-plus-square"></i>
+          </a>
+          <a href="/" title="Title">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a href="/" title="Title">
+            <i class="fab fa-youtube-square"></i>
+          </a>
+          <a href="/" title="Title">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <div class="form-bg-img">
+            <h1 class="form-head">Send Your Email Here !</h1>
+            <img src="./mailz.d13d5e32.jpeg" class="form-img" alt="Image" />
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="form">
+            <div class="form-child">
+              <label for="Name">Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter Name"
+                contact-name
+              />
+            </div>
+
+            <div class="form-child">
+              <label for="Email">Email</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+                contact-email
+              />
+            </div>
+
+            <div class="form-child">
+              <label for="Message">Message</label>
+              <textarea
+                name="textarea"
+                id="msg"
+                rows="5"
+                placeholder="Enter message"
+                contact-msg
+              ></textarea>
+            </div>
+            <div class="btn-container">
+              <button class="form-btn" btn>Submit</button>
+              <div class="checkmark-container">
+                <svg
+                  x="0px"
+                  y="0px"
+                  fill="none"
+                  class="checkmark-svg"
+                  viewBox="0 0 25 30"
+                >
+                  <path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
