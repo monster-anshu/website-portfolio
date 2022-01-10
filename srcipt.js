@@ -4,12 +4,14 @@ const btn = document.querySelector("[btn]");
 const navbar = document.querySelector("[navbar]");
 const navbar_btn = document.querySelectorAll("[navbar-btn]");
 const resume = document.querySelector("[resume-card]");
+const form = document.querySelector("[form]");
 let x = 0;
 let z = 0;
 
 (function () {
   emailjs.init("user_NOmaxiUt7C5WnlrHsLiD1");
 })();
+
 toSelect.forEach((element) => {
   element.addEventListener("click", () => {
     toSelect.forEach((ele) => {
@@ -24,29 +26,26 @@ toSelect.forEach((element) => {
   });
 });
 
-navbar_btn.forEach(element=>{
-  element.addEventListener('click',()=>{
-    navbar.classList.toggle('show-navbar');
-  })
-})
+navbar_btn.forEach((element) => {
+  element.addEventListener("click", () => {
+    navbar.classList.toggle("show-navbar");
+  });
+});
 
-const sendMail = async () => {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  btn.classList.add("animating");
+  btn.disable = true;
   const data = {
     form_name: document.querySelector("[contact-name]").value,
     reply_to: document.querySelector("[contact-email]").value,
     message: document.querySelector("[contact-msg]").value,
   };
-  console.log(data);
-  await emailjs
+  emailjs
     .send("service_qmd9ghs", "template_qatb9ua", data)
     .then(function (res) {
       console.log(res);
     });
-};
-
-btn.addEventListener("click", async () => {
-  await sendMail();
-  btn.classList.toggle("animating");
 });
 
 let text = [
