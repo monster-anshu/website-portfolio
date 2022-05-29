@@ -504,7 +504,7 @@ li.skill-item {
 }
 
 .skill-progress#react::after {
-  width: 80%;
+  width: 95%;
 }
 
 .skill-progress#react-native::after {
@@ -512,11 +512,11 @@ li.skill-item {
 }
 
 .skill-progress#express::after {
-  width: 70%;
+  width: 80%;
 }
 
 .skill-progress#node::after {
-  width: 82%;
+  width: 88%;
 }
 
 .skill-progress#mongo::after {
@@ -524,7 +524,7 @@ li.skill-item {
 }
 
 .skill-progress#cpp::after {
-  width: 94%;
+  width: 95%;
 }
 
 .skill-progress#html::after {
@@ -532,15 +532,15 @@ li.skill-item {
 }
 
 .skill-progress#css::after {
-  width: 80%;
+  width: 85%;
 }
 
 .skill-progress#js::after {
-  width: 86%;
+  width: 90%;
 }
 
 .skill-progress#java::after {
-  width: 50%;
+  width: 60%;
 }
 
 .resume-text>div:first-child {
