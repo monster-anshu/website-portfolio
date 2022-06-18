@@ -57,7 +57,6 @@ html {
 body {
   text-align: center;
   /* width: 475px; */
-  padding-bottom: 10rem;
 }
 
 .container {
@@ -552,6 +551,16 @@ li.skill-item {
   justify-content: space-between;
   align-items: baseline;
   width: calc(100% - 20px);
+}
+
+.resume-text i {
+  color: blue;
+  font-size: 1rem;
+}
+
+.resume-text i:hover {
+  color: red;
+  font-size: 1rem;
 }
 
 .interests .resume-text>div:first-child,

@@ -12,17 +12,13 @@ let z = 0;
   emailjs.init("user_NOmaxiUt7C5WnlrHsLiD1");
 })();
 
-toSelect.forEach((element) => {
+toSelect.forEach((element, index) => {
   element.addEventListener("click", () => {
     toSelect.forEach((ele) => {
       ele.classList.remove("selected");
     });
     element.classList.add("selected");
-    z = 0;
-    toSelect.forEach((ele) => {
-      if (ele == element) resume.style.transform = `translateY(-${z * 350}px)`;
-      z++;
-    });
+    resume.style.transform = `translateY(-${index * 350}px)`;
   });
 });
 
@@ -51,10 +47,14 @@ form.addEventListener("submit", (e) => {
 let text = [
   "Ethusiastic Dev",
   "Full Stack Developer",
-  "MERN Stack Developer",
+  "MERN Developer",
   "React Developer",
-  "Cross Platform ",
+  "Cross Platform",
   "Web Developer",
+  "NodeJS Developer",
+  "Cloud Engineer",
+  "Back-end Devloper",
+  "Software Engineer",
 ];
 
 let curr = [];
@@ -91,14 +91,3 @@ const loop = () => {
   setTimeout(loop, time);
 };
 loop();
-
-// menus.addEventListener("click", (e) => {
-//   e.path.forEach((ele) => {
-//     if (ele.tagName == "LI") {
-//       let selected = document.getElementsByClassName("selected");
-//       for (let i = 0; i < selected.length; i++)
-//         selected[i].classList.remove("selected");
-//       e.path[1].classList.toggle("selected");
-//     }
-//   });
-//
