@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Signika&family=Ubuntu&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Signika&family=Ubuntu&display=swap');
 
 *,
 *::after,
@@ -7,7 +7,7 @@
   box-sizing: border-box;
   padding: 0;
   text-decoration: none;
-  font-family: "Signika", sans-seri;
+  font-family: 'Signika', sans-seri;
   list-style: none;
 }
 
@@ -33,7 +33,6 @@ html {
   --btn-height: 40px;
 }
 
-
 .about-me-picture {
   background: aqua;
   display: flex;
@@ -57,6 +56,7 @@ html {
 body {
   text-align: center;
   /* width: 475px; */
+  padding-bottom: 10rem;
 }
 
 .container {
@@ -103,7 +103,7 @@ nav {
   display: none;
 }
 
-.toggle>div {
+.toggle > div {
   padding-top: 4px;
   width: 40px;
   margin: 4px 0;
@@ -114,7 +114,7 @@ nav {
 
 .name {
   font-size: 2.5rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar-container ul {
@@ -229,12 +229,12 @@ i:hover {
 .typical {
   min-height: 55px;
   font-size: 35px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .typical::after {
   font-weight: 100;
-  content: "|";
+  content: '|';
   animation: blinker 300ms linear infinite;
 }
 
@@ -278,7 +278,7 @@ i:hover {
 .profile-picture-background {
   height: 94%;
   width: 94%;
-  background-image: url("./images/pic.jpg");
+  background-image: url('https://raw.githubusercontent.com/monster-anshu/document/master/profile.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -348,7 +348,7 @@ i:hover {
 }
 
 .line::after {
-  content: "";
+  content: '';
   display: block;
   margin: auto;
   height: 12px;
@@ -378,7 +378,7 @@ i:hover {
   font-weight: 600;
   font-size: 1rem;
   margin-bottom: 0.6rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .resume {
@@ -484,7 +484,7 @@ i:hover {
 }
 
 .skill-progress::after {
-  content: "";
+  content: '';
   height: 100%;
   position: absolute;
   background-color: red;
@@ -542,7 +542,7 @@ li.skill-item {
   width: 60%;
 }
 
-.resume-text>div:first-child {
+.resume-text > div:first-child {
   width: calc(100% - 88px);
 }
 
@@ -553,18 +553,8 @@ li.skill-item {
   width: calc(100% - 20px);
 }
 
-.resume-text i {
-  color: blue;
-  font-size: 1rem;
-}
-
-.resume-text i:hover {
-  color: red;
-  font-size: 1rem;
-}
-
-.interests .resume-text>div:first-child,
-.work-history .resume-text>div:first-child {
+.interests .resume-text > div:first-child,
+.work-history .resume-text > div:first-child {
   width: 100%;
 }
 
@@ -672,23 +662,24 @@ li.skill-item {
   height: 54px;
 }
 
-.form-input, textarea {
+.form-input,
+textarea {
   margin-bottom: 20px;
   border-radius: 9px;
   border: none;
   /* background: #e9e5df; */
   padding: 1rem;
-  background-color: hsla(0, 0%, 90.2%, .6);
+  background-color: hsla(0, 0%, 90.2%, 0.6);
   margin-top: 5px;
   outline: none;
 }
 
 .form-btn {
   position: relative;
-  background-color: #2B2D2F;
-  color: #71DFBE;
+  background-color: #2b2d2f;
+  color: #71dfbe;
   border: none;
-  border-radius: .125em;
+  border-radius: 0.125em;
   width: var(--btn-width);
   height: var(--btn-height);
   font-weight: bold;
@@ -701,32 +692,34 @@ li.skill-item {
   color: transparent;
   user-select: none;
   cursor: default;
-  animation: hide 0ms calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards;
+  animation: hide 0ms
+    calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards;
 }
 
 .form-btn::before {
-  content: "";
+  content: '';
   display: none;
   position: absolute;
-  background-color: #2B2D2F;
+  background-color: #2b2d2f;
   inset: 0;
-  border-radius: .125em;
-  animation: squish var(--squish-animation-time) cubic-bezier(0.26, 0.6, 0.46, 1.7);
+  border-radius: 0.125em;
+  animation: squish var(--squish-animation-time)
+    cubic-bezier(0.26, 0.6, 0.46, 1.7);
   animation-fill-mode: forwards;
 }
 
-
 .form-btn::after {
-  content: "";
+  content: '';
   display: none;
   position: absolute;
-  background-color: #AAA;
+  background-color: #aaa;
   left: 51%;
   right: 51%;
   top: 45%;
   bottom: 45%;
-  border-radius: .25em;
-  animation: progress var(--progress-animation-time) var(--squish-animation-time);
+  border-radius: 0.25em;
+  animation: progress var(--progress-animation-time)
+    var(--squish-animation-time);
   animation-fill-mode: forwards;
 }
 
@@ -735,18 +728,20 @@ li.skill-item {
   display: block;
 }
 
-.form-btn.animating+.checkmark-container {
-  background-color: #2B2D2F;
-  border-radius: .25em;
+.form-btn.animating + .checkmark-container {
+  background-color: #2b2d2f;
+  border-radius: 0.25em;
   width: 0;
   height: 0;
-  animation: circle var(--circle-animation-time) calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards cubic-bezier(0.26, 0.6, 0.46, 1.7);
+  animation: circle var(--circle-animation-time)
+    calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards
+    cubic-bezier(0.26, 0.6, 0.46, 1.7);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form-btn.animating+.checkmark-container .checkmark-svg {
+.form-btn.animating + .checkmark-container .checkmark-svg {
   stroke: white;
   width: 25px;
   stroke-dashoffset: 40.84104919433594;
@@ -754,7 +749,12 @@ li.skill-item {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3px;
-  animation: checkmark var(--circle-animation-time) calc(var(--squish-animation-time) + var(--progress-animation-time) + var(--circle-animation-time)) forwards;
+  animation: checkmark var(--circle-animation-time)
+    calc(
+      var(--squish-animation-time) + var(--progress-animation-time) +
+        var(--circle-animation-time)
+    )
+    forwards;
 }
 
 .btn-container {
@@ -773,7 +773,7 @@ li.skill-item {
     right: -25%;
     top: 45%;
     bottom: 45%;
-    border-radius: .25em;
+    border-radius: 0.25em;
   }
 }
 
@@ -793,12 +793,12 @@ li.skill-item {
 
 @keyframes circle {
   0% {
-    width: calc(var(--btn-width) * 1.50);
-    height: calc(var(--btn-height) * .1);
+    width: calc(var(--btn-width) * 1.5);
+    height: calc(var(--btn-height) * 0.1);
   }
 
   100% {
-    background-color: #71DFBE;
+    background-color: #71dfbe;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -924,7 +924,7 @@ li.skill-item {
     display: none;
   }
 
-  .resume-text>div:first-child {
+  .resume-text > div:first-child {
     width: 100%;
   }
 }
