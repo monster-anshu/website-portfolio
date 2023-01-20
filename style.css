@@ -36,6 +36,7 @@ html {
 .about-me-picture {
   background: aqua;
   display: flex;
+  max-width: 500px;
 }
 
 .about-me-picture img {
