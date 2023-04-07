@@ -1,4 +1,3 @@
-import TOKEN from "./config";
 const textView = document.getElementById("typical");
 const toSelect = document.querySelectorAll("[data-forSelect]");
 const btn = document.querySelector("[btn]");
@@ -10,7 +9,7 @@ let x = 0;
 let z = 0;
 
 (function () {
-  emailjs.init(TOKEN);
+  emailjs.init("user_NOmaxiUt7C5WnlrHsLiD1");
 })();
 
 toSelect.forEach((element, index) => {
